@@ -9,9 +9,6 @@ class FeedViewModel {
     var token: NotificationToken? {
         feedRepository.token
     }
-    var error: Error? {
-        feedRepository.error
-    }
     
     func loadFeedFromAPI(completion: @escaping(Error?) -> Void) {
         feedRepository.loadFeedFromAPI { error in

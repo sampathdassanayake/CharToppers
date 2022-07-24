@@ -41,7 +41,6 @@ class FeedViewController: BaseViewController {
         collectionView?.delegate = self
         
         view.addSubview(collectionView ?? UICollectionView())
-        
         self.view = view
     }
     
